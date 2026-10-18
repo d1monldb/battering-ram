@@ -1,0 +1,27 @@
+# 统一按 LF 存储，检出时 Windows 转 CRLF
+* text=auto eol=lf
+
+# 明确二进制，避免被当文本处理
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.pdf  binary
+*.zip  binary
+*.7z   binary
+*.gz   binary
+*.exe  binary
+*.dll  binary
+*.so   binary
+*.dylib binary
+*.woff  binary
+*.woff2 binary
+
+# Windows 批处理保持 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# PowerShell 脚本用 CRLF
+*.ps1 text eol=crlf
